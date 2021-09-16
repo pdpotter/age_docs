@@ -22,7 +22,7 @@ copyright = '2021, Apache AGE'
 author = 'Apache AGE'
 
 # The full version, including alpha/beta/rc tags
-release = '0.6.0'
+release = 'master'
 
 
 # -- General configuration ---------------------------------------------------
