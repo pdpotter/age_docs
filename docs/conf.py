@@ -58,8 +58,16 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = "images/logo.png"
-html_favicon = "images/favicon.ico"
+html_logo = 'images/logo.png'
+html_favicon = 'images/favicon.ico'
+
+html_context = {
+    'display_github': True,
+    'github_user': 'pdpotter',
+    'github_repo': 'age_docs',
+    'github_version': 'master',
+    'conf_py_path': '/docs/',
+}
 
 # -- Multiversion options ----------------------------------------------------
 
