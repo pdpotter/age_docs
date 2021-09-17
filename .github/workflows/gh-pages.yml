@@ -10,9 +10,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: |
-          git remote set-branches origin "*"
-          git fetch
+      - run: git for-each-ref
 
       - name: Setup Python
         uses: actions/setup-python@v2
