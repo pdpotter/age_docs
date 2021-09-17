@@ -74,4 +74,6 @@ html_context = {
 # Don't include tags
 smv_tag_whitelist = None
 smv_branch_whitelist = r'^(?!gh-pages).*$'
+smv_remote_whitelist = r'^.*$'
 smv_released_pattern = r'^heads/.*$'
+smv_prefer_remote_refs = True
