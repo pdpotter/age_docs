@@ -10,14 +10,14 @@ To create a graph, use the create_graph function, located in the ag_catalog name
 
 #### Syntax
 
-```
+```text
 create_graph(graph_name)
 ```
 
 #### Returns
 
-```
-    void
+```text
+void
 ```
 
 #### Arguments
@@ -27,7 +27,7 @@ create_graph(graph_name)
 | graph_name  | Name of the graph to be created |
 
 #### Considerations
---------------
+
 * This function will not return any results. However if there is not an error message the graph will be created.
 * Tables needed to set up the graph are automatically created.
 
@@ -45,13 +45,13 @@ To delete a graph, use the drop_graph function, located in the ag_catalog namesp
 
 #### Syntax
 
-```
+```text
 drop_graph(graph_name, cascade)
 ```
 
 #### Returns
 
-```
+```text
 void
 ```
 
