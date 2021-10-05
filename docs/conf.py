@@ -22,7 +22,7 @@ copyright = '2021, Apache AGE'
 author = 'Apache AGE'
 
 # The full version, including alpha/beta/rc tags
-release = 'master'
+release = 'v0.6.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -66,7 +66,7 @@ html_context = {
     'display_github': True,
     'github_user': 'pdpotter',
     'github_repo': 'age_docs',
-    'github_version': 'master',
+    'github_version': 'v0.6.0',
     'conf_py_path': '/docs/',
 }
 
