@@ -174,7 +174,7 @@
         
           
             
-              <a href="https://github.com/pdpotter/age_docs/blob/master/docs/setup.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/pdpotter/age_docs/blob/v0.6.0/docs/setup.md" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -194,11 +194,11 @@
 <h2>Getting AGE<a class="headerlink" href="#getting-age" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="releases">
 <h3>Releases<a class="headerlink" href="#releases" title="Permalink to this headline">¶</a></h3>
-<p>The releases and release notes can be found at https://github.com/apache/incubator-age/releases</p>
+<p>The releases and release notes can be found at <a class="reference external" href="https://github.com/apache/incubator-age/releases">https://github.com/apache/incubator-age/releases</a></p>
 </div>
 <div class="section" id="source-code">
 <h3>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h3>
-<p>The source code can be found at https://github.com/apache/incubator-age</p>
+<p>The source code can be found at <a class="reference external" href="https://github.com/apache/incubator-age">https://github.com/apache/incubator-age</a></p>
 </div>
 </div>
 <div class="section" id="pre-installation">
@@ -207,19 +207,19 @@
 Building AGE from source depends on the following Linux libraries (Ubuntu package names shown below):</p>
 <div class="section" id="centos">
 <h3>CentOS<a class="headerlink" href="#centos" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>yum install gcc glibc glib-common readline readline-devel zlib zlib-devel flex bison
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">yum install gcc glibc glib-common readline readline-devel zlib zlib-devel flex bison</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="fedora">
 <h3>Fedora<a class="headerlink" href="#fedora" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>dnf install gcc glibc bison flex readline readline-devel zlib zlib-devel
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">dnf install gcc glibc bison flex readline readline-devel zlib zlib-devel</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="ubuntu">
 <h3>Ubuntu<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo apt-get install build-essential libreadline-dev zlib1g-dev flex bison
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt-get install build-essential libreadline-dev zlib1g-dev flex bison</span>
 </pre></div>
 </div>
 </div>
@@ -227,11 +227,11 @@ Building AGE from source depends on the following Linux libraries (Ubuntu packag
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The build process will attempt to use the first path in the PATH environment variable when installing AGE. If the pg_config path is located there, run the following command in the source code directory of Apache AGE to build and install the extension.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>make install
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">make install</span>
 </pre></div>
 </div>
 <p>If the path to your Postgres installation is not in the PATH variable, add the path in the arguments:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>make <span class="nv">PG_CONFIG</span><span class="o">=</span>/path/to/postgres/bin/pg_config install
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">make PG_CONFIG=/path/to/postgres/bin/pg_config install</span>
 </pre></div>
 </div>
 </div>
