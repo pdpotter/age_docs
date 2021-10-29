@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: uses: awalsh128/cache-apt-pkgs-action@v1
+      - uses: awalsh128/cache-apt-pkgs-action@v1
         with:
           packages: texlive-latex-base texlive-latex-extra texlive-extra-utils
           version: 1.0
