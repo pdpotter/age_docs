@@ -4,16 +4,11 @@ on: push
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - uses: awalsh128/cache-apt-pkgs-action@v1
-        with:
-          packages: texlive-latex-base texlive-latex-extra texlive-extra-utils
-          version: 1.0
 
       - name: Setup Python
         uses: actions/setup-python@v2
@@ -24,6 +19,9 @@ jobs:
         run: |
           # install pip=>20.1 to use "pip cache dir"
           python3 -m pip install --upgrade pip
+
+      - name: Install Latex and dvisvgm
+        run: sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-extra-utils
 
       - name: Get pip cache dir
         id: pip-cache
